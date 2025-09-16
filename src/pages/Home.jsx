@@ -43,12 +43,10 @@ export default function Home() {
                 to="/products"
                 className="inline-block rounded-xl border border-white/20 px-4 py-2 text-white hover:bg-white/10"
               >
-                Call to Action
+                Products
               </Link>
             </div>
           </div>
-
-          
         </div>
       </section>
     </>

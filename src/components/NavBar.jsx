@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { Search, Home, Info, ShoppingBag } from "lucide-react";
+import { Search} from "lucide-react";
 
 const base =
   "px-3 py-2 rounded-lg transition text-white hover:bg-white hover:text-black";
@@ -37,6 +37,11 @@ export default function Navbar() {
           <NavLink to="/products" className={({ isActive }) => `${base} ${isActive ? active : ""}`}>
             <span className="flex items-center gap-2">
               Products
+            </span>
+          </NavLink>
+          <NavLink to="/contact" className={({ isActive }) => `${base} ${isActive ? active : ""}`}>
+            <span className="flex items-center gap-2">
+              Contact
             </span>
           </NavLink>
         </nav>
